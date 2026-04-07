@@ -79,7 +79,6 @@ jobs:
 
       # === 3. BUILD PHASE ===
       - name: Build Clean Application
-        # Added -U to force clean dependency downloads
         run: mvn clean package -s settings.xml -DskipTests -U
 
       # === 4. CI/CD EXECUTION PHASE ===
